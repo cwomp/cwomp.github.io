@@ -7,8 +7,7 @@
       "ground_truth": ["Razhbadin-GEN2", "home", "wife-and", "children-and", "be-QUOT", "answer", "give-PST.UNW", "old-DEF", "man-ERG"],
       "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
     },
     {
       "transcript": "Sidaquł žedu ciqaɣor qaciƛ'or rik'in.",
@@ -17,8 +16,7 @@
       "ground_truth": ["one.day", "DEM1.IPL.OBL", "forest-IN.VERS", "firewood-SUPER.LAT", "II.PL-go-PST.UNW"],
       "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
     },
     {
       "transcript": "Di debeq ʕaq'lu mołiranix nexäsi yołƛin, eƛin užä.",
@@ -27,8 +25,7 @@
       "ground_truth": ["me", "you-POSS.ESS", "advice", "teach-CAUS-MSD-AD.ESS", "come-RES.PRT", "be-QUOT", "say-PST.UNW", "boy-ERG"],
       "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
     },
     {
       "transcript": "Micxir beč'xosi kesun bisno, Kusa iduɣor ik'in.",
@@ -37,8 +34,7 @@
       "ground_truth": ["money", "III-cut-IPFV.CVB-ATTR", "form-TOP", "III-take-PFV.CVB", "Kusa", "home-IN.ALL", "go-PST.UNW"],
       "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
     },
     {
       "transcript": "Nełaq bˤuƛ'nogon k'et'u boxin ɣunoq soder bizin.",
@@ -47,8 +43,7 @@
       "ground_truth": ["DEM1.IISG.OBL-POSS.ESS", "III-be.afraid-PFV.CVB-CNTR", "cat", "III-run.away-PFV.CVB", "tree-POSS.ESS", "after", "III-get.up-PFV.CVB"],
       "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
     },
     {
       "transcript": "Howži yisä eloza ičanix moči k'edin.",
@@ -57,20 +52,63 @@
       "ground_truth": ["now", "DEM2.ISG.OBL-ERG", "there-ZA", "sit-MSD-AD.ESS", "place", "search-PST.UNW"],
       "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
     }
   ],
   "Gitksan": [
     {
-      "transcript": "[Gitksan example — placeholder sentence]",
-      "translation": "[English translation placeholder]",
-      "segmentation": "[morpheme-1] [morpheme-2] [morpheme-3] [morpheme-4]",
-      "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "transcript": "Dim mehldi'y wila wilhl win ksi hogwin bakwhl mismaaxwsxum gyet g̲o'ohl ts'ebi'm Gitwinhlguu'l gik'uuhl.",
+      "translation": "I will tell about when the white men first came to Kitwancool long ago.",
+      "segmentation": "dim mehl-d-i-'y wila wil-hl win ksi hogwin bakw-hl mis-maaxwsxw-m gyet g̲o'o-hl ts'ep-'m gitwinhlguu'l gik'uuhl",
+      "ground_truth": ["PROSP", "tell-T-TR-1SG.II", "MANR", "LVB-CN", "COMP", "in", "toward", "come.PL-CN", "PL-white-ATTR", "person", "LOC-CN", "inhabitants-1PL.II", "Kitwancool", "long.ago"],
+      "cwmp_train": ["PROSP", "LVB-1SG.II", "MANR", "LVB-CN", "COMP-1.I", "spouse", "LOC-on-DEM.PROX", "arrive.PL-CN", "white.person", "PR.EVID-CN", "LOC-CN", "in-1PL.II", "three-CN", "IPFV-CN"],
+      "cwmp_extended": ["PROSP", "LVB-1SG.II", "MANR", "LBV-CN", "COMP-COMP", "in", "toward-toward-sit.PL", "come.PL-CN", "white.person", "what-3PL.II", "LOC-CN", "in-1PL.II", "Kitwancool-Gitwinhlguu'l", "long.ago-CN"],
+      "glosslm": ["tell-T-TR-1SG.II", "COMP", "LOC-CN", "COMP", "first", "lead-CN", "white.person-PL", "when", "LOC-CN", "reach-TR", "Kitwancool", "long.ago"]
+    },
+    {
+      "transcript": "Ha'ondii 'nakw hlidaa bakwhl gyet dipun, ii sag̲aytg̲oodindiithl hli gyedihl Gitwinhlguu'l.",
+      "translation": "Not long after these people arrived, they gathered together the people of Kitwancool.",
+      "segmentation": "ha'wen-dii 'nakw hli-da bakw-hl gyet dip-xwin ii sag̲ayt-g̲oot-in-diit-hl hli gyet-i-hl gitwinhlguu'l",
+      "ground_truth": ["not.yet-FOC", "long", "PART-SPT", "come.PL-CN", "person", "ASSOC-DEM.PROX", "CCNJ", "together-heart-CAUS2-3PL.II-CN", "PART", "person-T-CN", "Kitwancool"],
+      "cwmp_train": ["on", "long", "PART-SPT", "arrive.PL-CN", "PR.EVID-DM", "PROSP", "CCNJ", "INS-T-T-CN", "all.the.way", "say-CN", "COMP-COMP-CN"],
+      "cwmp_extended": ["thought", "long", "PART-SPT", "come.PL-CN", "what-3PL.II", "PROSP", "CCNJ", "mountain-mountain-T-CN", "all.the.way", "QUOT.3SG-CN", "Kitwancool-Kitwancool"],
+      "glosslm": ["not.long.after-FOC", "only", "DEM-PL", "arrive.PL-CN", "man", "LOC-PL", "CCNJ", "gather.PL-COM-TR-PL-3PL.II-CN", "DEM", "person-PL-CN", "Kitwancool"]
+    },
+    {
+      "transcript": "Hasak̲diit dim mehldiit win hlaa dim sii ha'niijok̲t g̲o'ohl win t'aahl g̲alts'ephl Gitwinhlguu'l.",
+      "translation": "They wanted to tell about the new place where the village of Kitwancool is to be.",
+      "segmentation": "hasak̲-diit dim mehl-diit win hlaa dim sii ha-'nii-jok̲-t g̲o'o-hl win t'aa-hl g̲alts'ep-hl Gitwinhlguu'l",
+      "ground_truth": ["desire-3PL.II", "PROSP", "tell-3PL.II", "COMP", "INCEP", "PROSP", "new", "INS-on-dwell-3.II", "LOC-CN", "COMP", "sit-CN", "village-CN", "Kitwancool"],
+      "cwmp_train": ["Canadian-long", "PROSP", "NEG-3PL.II", "COMP-1.I", "INCEP", "PROSP", "1.I", "DISTR-long-SX", "LOC-CN", "COMP-1.I", "pick-T-CN", "work-CN", "COMP-CN"],
+      "cwmp_extended": ["want-long", "PROSP", "NEG-3PL.II", "COMP-COMP", "INCEP", "PROSP", "COMP", "mountain-long-SX", "LOC-CN", "COMP-COMP", "pick-T-CN", "village-CN", "Kitwancool-Gitwinhlguu'l"],
+      "glosslm": ["want-3PL.II", "PROSP", "tell-3PL.II", "COMP", "house", "PROSP", "around", "COMP-IPFV-sit-3", "LOC-CN", "COMP", "place-CN", "village-CN", "Kitwancool"]
+    },
+    {
+      "transcript": "'Nit sag̲ootxwhl government siwetdiit, ii dim 'nii wenhl dim jok̲hl aluugigyet g̲o'ohl lax̲ reserve siwetdiit.",
+      "translation": "The plan of the so-called government was that they will have Indian people live on a so-called reserve.",
+      "segmentation": "'nit sa-g̲oot-xw-hl government si-we-t-diit ii dim 'nii wen-hl dim jok̲-hl aluu-gi-gyet g̲o'o-hl lax̲ reserve si-we-t-diit",
+      "ground_truth": ["3.III", "CAUS1-heart-PASS-CN", "government", "CAUS1-name-T-3PL.II", "CCNJ", "PROSP", "on", "sit.PL-CN", "PROSP", "live-CN", "plainly-PL-people", "LOC-CN", "on", "reserve", "CAUS1-name-T-3PL.II"],
+      "cwmp_train": ["3.III", "INS-turn-CN", "DM-DEM.PROX-DM", "CAUS1-3PL.II-DM", "CCNJ", "PROSP", "on", "COMP-CN", "PROSP", "live-CN", "MANR-3.I", "LOC-CN", "on", "office", "CAUS1-3PL.II-DM"],
+      "cwmp_extended": ["3.III", "MS.AMT-turn-CN", "government-government-government", "T-name-3PL.II", "CCNJ", "PROSP", "on", "Kitwancool-CN", "PROSP", "live-CN", "MANR-QUDD", "LOC-CN", "on", "reserve", "T-name-DM"],
+      "glosslm": ["on", "plan.CN", "government", "so-call-3PL.II", "CCNJ", "PROSP", "AUX", "someone-CN", "PROSP", "live-CN", "Indian", "on-CN", "upon", "reserve", "so-call-3PL.II"]
+    },
+    {
+      "transcript": "\"Gu g̲anwilt,\" diyehl hli gyedihl Gitwinhlguu'l, \"ehl 'nii jog̲o'm g̲o'ohl lax̲yibi'm g̲o'osun.\"",
+      "translation": "\"Why?\" the people of Kitwancool asked. \"We live on our land, here.\"",
+      "segmentation": "gu g̲an-wil-t diye-hl hli gyet-i-hl Gitwinhlguu'l e-hl 'nii jok̲-'m g̲o'o-hl lax̲yip-'m g̲o'o-s-xwin",
+      "ground_truth": ["what", "REAS-be/do-3.II", "QUOT.3SG-CN", "PART", "people-T-CN", "Gitwinhlguu'l", "PREP-CN", "on", "dwell-1PL.II", "LOC-CN", "land-1PL.II", "LOC-PN-DEM.PROX"],
+      "cwmp_train": ["take-CN", "continually-MANR-SX", "3PL.II-CN", "LVB", "say-CN", "COMP-CN-CN", "say-CN", "on", "Stockholm-1PL.II-1PL.II", "LOC-CN", "return-PASS-1PL.II", "LOC-PN-DEM.PROX-DEM.PROX"],
+      "cwmp_extended": ["what-CN", "continually-MANR-stand", "QUOT.3SG-CN", "LVB", "QUOT.3SG-CN", "Gitwinhlguu'l-Gitwinhlguu'l", "say-CN", "on", "into.low.plane-across-1PL.II", "LOC-CN", "return-PASS-1PL.II", "LOC-PN-DEM.PROX-DEM.PROX"],
+      "glosslm": ["PROSP", "why-AUX-3", "ask-CN", "DM", "man-CN", "Kitwancool", "CCNJ-CN", "DM", "live-1PL.II", "LOC-CN", "POSS-land-1PL.II", "LOC-POSS-1PL.II"]
+    },
+    {
+      "transcript": "Ii nax̲'nidiit win dim bakwhl siwetdiit ehl surveyors.",
+      "translation": "They heard that what they call surveyors were coming.",
+      "segmentation": "ii nax̲'ni-diit win dim bakw-hl si-we-t-diit e-hl surveyors",
+      "ground_truth": ["CCNJ", "hear-3PL.II", "COMP", "PROSP", "come.PL-CN", "CAUS1-name-T-3PL.II", "PREP-CN", "surveyors"],
+      "cwmp_train": ["CCNJ", "AX", "COMP-1.I", "PROSP", "arrive.PL-CN", "CAUS1-FOC-DM", "say-CN", "across"],
+      "cwmp_extended": ["CCNJ", "hear", "COMP-COMP", "PROSP", "come.PL-CN", "T-name-DM", "tell-CN", "surveyors-surveyors"],
+      "glosslm": ["CCNJ", "hear-TR-3PL.II", "COMP", "PROG", "arrive-CN", "name-3PL.II-CN", "DWID-CN", "surveyors"]
     }
   ],
   "Arapaho": [
@@ -81,8 +119,7 @@
       "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
     }
   ],
   "Natugu": [
@@ -93,8 +130,7 @@
       "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
     }
   ],
   "Nyangbo": [
@@ -105,8 +141,7 @@
       "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
     }
   ],
   "Lezgi": [
@@ -117,8 +152,7 @@
       "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
     }
   ],
   "Uspanteko": [
