@@ -120,5 +120,16 @@
       "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
     }
+  ],
+  "Uspanteko": [
+    {
+      "transcript": "[PLACEHOLDER]",
+      "translation": "[PLACEHOLDER]",
+      "segmentation": "[PLACEHOLDER]",
+      "ground_truth": ["[PLACEHOLDER]"],
+      "cwmp_train": ["[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]"],
+      "glosslm": ["[PLACEHOLDER]"]
+    }
   ]
 }

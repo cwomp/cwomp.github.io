@@ -17,7 +17,6 @@
     { key: "cwmp_train",    label: "CWoMP (Train Lex)" },
     { key: "cwmp_extended", label: "CWoMP (Ext. Lex)" },
     { key: "glosslm",       label: "GlossLM" },
-    { key: "tucl",          label: "Tü-CL" },
   ];
 
   /* ---- MER (Morpheme Error Rate) ---- */
