@@ -113,57 +113,282 @@
   ],
   "Arapaho": [
     {
-      "transcript": "[Arapaho example — placeholder sentence]",
-      "translation": "[English translation placeholder]",
-      "segmentation": "[morpheme-1] [morpheme-2] [morpheme-3] [morpheme-4]",
-      "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "transcript": "'oh hiihoowkohtobeino' you know",
+      "translation": "But they don't say anything , you know ?",
+      "segmentation": "'oh hiihoowkohtobeino' you know",
+      "ground_truth": ["but", "3.IMPERF.NEG-say.s.t.-pers.PL", "you", "know"],
       "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "glosslm": ["but", "3.IMPERF.NEG-say.s.t.-pers.PL", "you", "know"]
+    },
+    {
+      "transcript": "Nuhu' tih'eeneti3i' heneenei3oobei'i3i'",
+      "translation": "When they speak , they tell the truth .",
+      "segmentation": "Nuhu' tih'eeneti3i' heneenei3oobei'i3i'",
+      "ground_truth": ["this", "when.PAST-speak-3PL", "IC.tell.the.truth-3PL"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["this", "when.PAST-speak-3PL", "IC.corrrect-3PL"]
+    },
+    {
+      "transcript": "Nehe' nebesiibehe' nih'iiP heesinihiit heihoowuunih'oo3ounin",
+      "translation": "My grandfather , what he said , we aren't White people ,",
+      "segmentation": "Nehe' nebesiibehe' nih'iiP heesinihiit heihoowuunih'oo3ounin",
+      "ground_truth": ["this", "my.grandfather", "PAST.IMPERF-pause", "what-say-3.S", "2.NEG-IMPERF-be.White-12"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["this", "my.grandfather", "PAST.what-pause", "what-say-3.S", "2.NEG-IMPERF-be.White-12"]
+    },
+    {
+      "transcript": "nooxeihi' nooke'ehk heetnoonoo3itoonoot Wayne hinee",
+      "translation": "Maybe tomorrow Wayne will tell that guy some stories .",
+      "segmentation": "nooxeihi' nooke'ehk heetnoonoo3itoonoot Wayne hinee",
+      "ground_truth": ["maybe", "tomorrow", "FUT-REDUP-tell.a.story-3S", "Wayne", "that"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["maybe", "tomorrow", "FUT-REDUP-tell.a.story-3S", "Wayne", "that"]
+    },
+    {
+      "transcript": "Beetbeteeenehk wo'uuceh nee'eesoo'",
+      "translation": "\" If you want to dance , well why the heck not !\"",
+      "segmentation": "Beetbeteeenehk wo'uuceh nee'eesoo'",
+      "ground_truth": ["want.to-dance-2S.SUBJ", "why.in.the.heck!?", "it.is.thus-0S"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["want.to-dance-2S.SBUJ", "why.in.the.heck!?", "it.is.thus-0S"]
+    },
+    {
+      "transcript": "co'oh'oe",
+      "translation": "Make a fist .",
+      "segmentation": "co'oh'oe",
+      "ground_truth": ["make.fist"],
+      "cwmp_train": ["[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]"],
+      "glosslm": ["make.fist"]
     }
   ],
   "Natugu": [
     {
-      "transcript": "[Natugu example — placeholder sentence]",
-      "translation": "[English translation placeholder]",
-      "segmentation": "[morpheme-1] [morpheme-2] [morpheme-3] [morpheme-4]",
-      "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "transcript": "A' Mama Lesile badr doa kcng pwx trnzmncpeu .",
+      "translation": "But Fr. Leslie with his four students were not there anymore.",
+      "segmentation": "A' Mama Lesile badr doa kcng pwx trnzmncpeu .",
+      "ground_truth": ["but", "priest", "Lesile", "ᴄᴏᴍ.ᴘʟ", "child", "those", "four", "NEG-PAS-be-COS-NEG", "."],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["but", "priest", "Lesile", "ᴄᴏᴍ.ᴘʟ", "child", "those", "four", "NEG-3AUG-be-COS-NEG"]
+    },
+    {
+      "transcript": "43 . Dzbede Ne Mr Lore",
+      "translation": "EP 43. Mr. Lore's Group",
+      "segmentation": "43 . Dzbede Ne Mr Lore",
+      "ground_truth": ["43", ".", "group-3MINII", "PCLF.RSBL.Mr", "Lore"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["43", "group", "PCLF.RSBL", "Mr", "Lore"]
+    },
+    {
+      "transcript": "Kx xlrbz trtenge nzycmnekrbz Tzsiu Jon , sc tqrpipebzle kx , \" Awitxpe Jon , mz nzycmne-krm la .",
+      "translation": "When my father heard the speech of Brother John, he said to him, \"Thank you very much John, for that speech of yours.",
+      "segmentation": "Kx xlrbz trtenge nzycmnekrbz Tzsiu Jon , sc tqrpipebzle kx , \" Awitxpe Jon , mz nzycmne-krm la .",
+      "ground_truth": ["SUBR", "hear-PDIR.YON", "father-1MINII", "NMLZ1-speak-NMLZ.POSS-PDIR.YON", "monk", "John", ",", "PFV", "RL-MID-say-COS-PDIR.YON-3MINIA", "SUBR", ",", "\"", "thank-INTS-COS", "John", ",", "PREP", "NMLZ1-speak-NMLZ.POSS-2MINII", "DEM1.PROΧ", "."],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["SUBR", "hear-PDIR.YON", "father-1MINII", "NMLZ1-speak-NMLZ.POSS-PDIR.YON", "monk", "John", "PFV", "RL-MID-say-COS-PDIR.YON-3MINIA", "SUBR", "thank.you-INTS-COS", "John", "PREP", "speak-NMLZ.POSS-2MINII", "DEM1.PROΧ"]
+    },
+    {
+      "transcript": "X nzmnclzbzng mrkc tqtuo-ngrm nanycde kzdung leplz .",
+      "translation": "And there were also some people down where his feet were standing.",
+      "segmentation": "X nzmnclzbzng mrkc tqtuo-ngrm nanycde kzdung leplz .",
+      "ground_truth": ["and", "3AUG-be-GDIR.UP-PDIR.YON-3AUGIS", "place.DEM2.DIST", "RL-stand-GDIR.DOWN-APPL-PDIR.HITHER", "foot-3MINII", "AT.ΦNT.PL.PL", "people", "."],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["and", "3AUG-be-GDIR.UP-PDIR.YON-3AUGIS", "place.DEM2.DIST", "RL-stand-GDIR.DOWN-APPL-PDIR.HITHER", "foot-3MINII", "AT.ΦNT.PL.PL", "possessions"]
+    },
+    {
+      "transcript": "Kx oblvztile rum kc x mcte da kx aletikrng , drtwrde vztx murde trnzpi-krpleu bagr nzrpwa'-krde nzdwatr-krgr mz rum nyz mqngr Ncbr .",
+      "translation": "When he looked over the room and saw what we had done, he was very sad because of his not telling about his forbidding our entering the room belonging to the image of the cross.",
+      "segmentation": "Kx oblvztile rum kc x mcte da kx aletikrng , drtwrde vztx murde trnzpi-krpleu bagr nzrpwa'-krde nzdwatr-krgr mz rum nyz mqngr Ncbr .",
+      "ground_truth": ["SUBR", "look-thruout-TR-3MINIA", "room", "DEM2.DIST", "and", "see-3MINII", "thing", "SUBR", "do-PLCT-1AUGI-PL", ",", "neck-3MINII", "feel.sad-INTS", "because", "NEG-NMLZ1-say-NMLZ.POSS-PDIR.HITHER-3MINIA-NEG", "DAT.1AUGII", "NMLZ1-forbid-NMLZ.POSS-3MINII", "NMLZ1-jump-GDIR.IN-NMLZ.POSS-1AUGII", "PREP", "room", "PCLF.B&G", "image", "cross", "."],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["SUBR", "look-TR-3MINIA", "room", "DEM2.DIST", "and", "see-3MINIA", "thing", "SUBR", "do-TR-1AUGII-PL", "mind-3MINII", "good-INTS", "because", "NEG-NMLZ1-say-NMLZ.POSS-PDIR.HITHER-3MINIA-NEG", "DAT.1AUGII", "NMLZ1-MID-forbid-NMLZ.POSS-3MINII", "NMLZ1-jump-GDIR.IN-NMLZ.POSS-1AUGII", "PREP", "room", "PCLF.B&G", "image", "cross"]
+    },
+    {
+      "transcript": "Nzmulr nangrlrkitrlr peto a' nrlc boipxm .",
+      "translation": "They wanted to run into the bush but the distance was too far.",
+      "segmentation": "Nzmulr nangrlrkitrlr peto a' nrlc boipxm .",
+      "ground_truth": ["3AUG-desire-3AUGIA", "IRR-hurry-path-GDIR.IN-3AUGIA", "bush", "but", "place", "long-GDIR.OUT-PDIR.HITHER", "."],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["3AUG-desire-3AUGIA", "IRR-run.in.game-GDIR.IN-3AUGIA", "bush", "but", "place", "long-GDIR.OUT-PDIR.HITHER-3MINIS"]
     }
   ],
   "Nyangbo": [
     {
-      "transcript": "[Nyangbo example — placeholder sentence]",
-      "translation": "[English translation placeholder]",
-      "segmentation": "[morpheme-1] [morpheme-2] [morpheme-3] [morpheme-4]",
-      "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "transcript": "pɛ akpɛ́ ozĩɛ́,",
+      "translation": "",
+      "segmentation": "pɛ akpɛ́ ozĩɛ́,",
+      "ground_truth": ["then", "3SG-put", "CM-noise-DEF"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["then", "3SG-put", "CM-noise-DEF"]
+    },
+    {
+      "transcript": "basɛnɔ ɔlɔ́ béke ɛ,",
+      "translation": "",
+      "segmentation": "basɛnɔ ɔlɔ́ béke ɛ,",
+      "ground_truth": ["3PL-greet", "1PL", "complete", "TP"],
       "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "glosslm": ["3PL-greet", "1PL", "complete", "TP"]
+    },
+    {
+      "transcript": "yi n' ebúɔ belí belí",
+      "translation": "",
+      "segmentation": "yi n' ebúɔ belí belí",
+      "ground_truth": ["3SG", "with", "CM-dog-DEF", "3PL-be_at", "3PL-be_at"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["3SG", "with", "CM-dog-DEF", "3PL-be_at", "3PL-be_at"]
+    },
+    {
+      "transcript": "balɔkɔ okumɛ akɔ́ ɔlɔ́.",
+      "translation": "",
+      "segmentation": "balɔkɔ okumɛ akɔ́ ɔlɔ́.",
+      "ground_truth": ["3PL-take", "CM-Okume", "SCONN-give", "1PL"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["3PL-take", "CM-Okume", "SCONN-give", "1PL"]
+    },
+    {
+      "transcript": "batɔɖɔ kúnú bawa kúnú ko,",
+      "translation": "",
+      "segmentation": "batɔɖɔ kúnú bawa kúnú ko,",
+      "ground_truth": ["3PL-put_on", "funeral", "3PL-do", "funeral", "just"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["3PL-put_on", "funeral", "3PL-do", "funeral", "just"]
+    },
+    {
+      "transcript": "ɔtɛ́bɔdɛ ekusí bɔpã́ mɛ",
+      "translation": "",
+      "segmentation": "ɔtɛ́bɔdɛ ekusí bɔpã́ mɛ",
+      "ground_truth": ["2SG-NEG:PRES-FUT-go_to", "CM-chief", "CM-house", "inside"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["2SG-NEG:PRES-FUT-go_to", "CM-chief", "CM-house", "inside"]
     }
   ],
   "Lezgi": [
     {
-      "transcript": "[Lezgi example — placeholder sentence]",
-      "translation": "[English translation placeholder]",
-      "segmentation": "[morpheme-1] [morpheme-2] [morpheme-3] [morpheme-4]",
-      "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "transcript": "И гададини гъил вегьена са жуьт къачуда .",
+      "translation": "And the guy picked up one necklace pair.",
+      "segmentation": "И гададини гъил вегьена са жуьт къачуда .",
+      "ground_truth": ["this", "boy-DIR-GEN-ERG", "hand", "threw-AOR", "one", "pair", "take-INESS", "."],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["this", "boy-DIR-GEN-ERG", "hand", "threw-AOR", "one", "pair", "take-INESS"]
+    },
+    {
+      "transcript": "Вични хьанвай къвалахар я .",
+      "translation": "and all this were real stories",
+      "segmentation": "Вични хьанвай къвалахар я .",
+      "ground_truth": ["reflxv-FOC", "be-PERF-PST", "work-PL", "was", "."],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["himself-FOC", "be-PERF-PST", "story-PL", "was"]
+    },
+    {
+      "transcript": "Яргъал акъатна чун ...",
+      "translation": "We ran far from there...",
+      "segmentation": "Яргъал акъатна чун ...",
+      "ground_truth": ["far", "apperance-AOR", "1pl.abs", "..."],
       "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
       "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+      "glosslm": ["far", "apperance-AOR", "1pl.abs"]
+    },
+    {
+      "transcript": "Ша фин гьуьлуьн къерехдиз » лугьуда .",
+      "translation": "\"Let's go to the seaside.\" said the horse.",
+      "segmentation": "Ша фин гьуьлуьн къерехдиз » лугьуда .",
+      "ground_truth": ["come", "go-GEN", "sea-OBL-GEN", "bank-ERG-DAT", "»", "say-ENT", "."],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["come", "go-GEN", "sea-OBL-GEN", "bank-ERG-DAT", "»", "say-ENT"]
+    },
+    {
+      "transcript": "Ахпа отпуска гана заз .",
+      "translation": "I was sent on vacation.",
+      "segmentation": "Ахпа отпуска гана заз .",
+      "ground_truth": ["then", "vacation", "give-AOR", "1sg.ERG-DAT", "."],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["then", "vacation", "give-AOR", "1sg.ERG-DAT"]
+    },
+    {
+      "transcript": "« Фена », лагьана , « куьне », лагьана , « зи балкӀандин кӀвач галукь тавунвай са чкадлай » лагьана , « заз са тике », лагьана « накьв гъваш » лагьана .",
+      "translation": "\"Go\" he said, \"and bring me some soil from a place where my horse has never walked.\"",
+      "segmentation": "« Фена », лагьана , « куьне », лагьана , « зи балкӀандин кӀвач галукь тавунвай са чкадлай » лагьана , « заз са тике », лагьана « накьв гъваш » лагьана .",
+      "ground_truth": ["«", "go-AOR", "»", "say-AOR", ",", "«", "you", "»", "say-AOR", ",", "«", "1sg.gen", "horse-ERG-GEN", "leg", "hit", "not.make.PRF.PTP-PERF-PST", "one", "place-ERG-SPSS-EL", "»", "say-AOR", ",", "«", "1sg.ERG-DAT", "one", "piece", "»", "say-AOR", "«", "soil", "bring.IMPV", "»", "say-AOR", "."],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["go-AOR", "say-AOR", "you", "say-AOR", "1sg.gen", "horse-ERG-GEN", "leg", "hit", "not.make.PRF.PTP-PERF-PTP", "one", "place-ERG-SPSS-EL", "say-AOR", "1sg.ERG-DAT", "one", "piece", "say-AOR", "soil", "bring.IMPV", "say-AOR"]
     }
   ],
   "Uspanteko": [
     {
-      "transcript": "[PLACEHOLDER]",
-      "translation": "[PLACEHOLDER]",
-      "segmentation": "[PLACEHOLDER]",
-      "ground_truth": ["[PLACEHOLDER]"],
-      "cwmp_train": ["[PLACEHOLDER]"],
-      "cwmp_extended": ["[PLACEHOLDER]"],
-      "glosslm": ["[PLACEHOLDER]"]
+      "transcript": "I xkaj seche' ra lék'el rk'i rixóqil.",
+      "translation": "Y dejo perdido el niño con la esposa.",
+      "segmentation": "I xkaj seche' ra lék'el rk'i rixóqil.",
+      "ground_truth": ["CONJ", "COM-quedar", "perder", "DIM", "niño", "E3S-SREL", "E3S-esposa"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["CONJ", "COM-quedar", "perder", "DIM", "niño", "E3S-SREL", "E3S-esposa"]
+    },
+    {
+      "transcript": "Xpe man anm xkaye' ra lék'el rk'i jmaam.",
+      "translation": "Vino la mujer, dejo al niño con su abuelo.",
+      "segmentation": "Xpe man anm xkaye' ra lék'el rk'i jmaam.",
+      "ground_truth": ["COM-venir", "ART", "mujer", "COM-dejar-dar", "DIM", "niño", "E3S-SREL", "E3S-abuelo"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["COM-venir", "ART", "mujer", "COM-quedar-dar", "DIM", "niño", "E3S-SREL", "E3S-abuelo"]
+    },
+    {
+      "transcript": "I xpe jmaam ril ra lék'el.",
+      "translation": "Y vino su abuelo cuido al niño.",
+      "segmentation": "I xpe jmaam ril ra lék'el.",
+      "ground_truth": ["CONJ", "COM-venir", "E3S-abuelo", "E3S-ver", "DIM", "niño"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["CONJ", "COM-venir", "E3S-abuelo", "E3S-ver", "DIM???"]
+    },
+    {
+      "transcript": "I xk'iy ra anm,",
+      "translation": "Y crecio la mujer.",
+      "segmentation": "I xk'iy ra anm,",
+      "ground_truth": ["CONJ", "COM-crecer", "DIM", "mujer"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["CONJ", "COM-crecer", "DIM", "mujer"]
+    },
+    {
+      "transcript": "xk'iiy xen q'opoj anm.",
+      "translation": "Crecio se hizo una señorita.",
+      "segmentation": "xk'iiy xen q'opoj anm.",
+      "ground_truth": ["COM-crecer", "COM-hacer", "señorita", "mujer"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["COM-crecer", "COM-hacer", "señorita", "mujer"]
+    },
+    {
+      "transcript": "Wi' jun wunaq jb'ij Sergiyo,",
+      "translation": "Habia un hombre llamado sergio.",
+      "segmentation": "Wi' jun wunaq jb'ij Sergiyo,",
+      "ground_truth": ["EXS", "uno", "hombre", "E3S-decir", "Sergio"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["EXS", "uno", "hombre", "E3S-nombre", "sergio"]
     }
   ]
 }
