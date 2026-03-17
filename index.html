@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CWoMP: Morpheme Representation Learning for Interlinear Glossing</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="container" style="max-width:860px">
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<div class="row mt-5 mb-2">
+  <div class="col text-center">
+    <p class="h2 font-weight-bold">CWoMP</p>
+    <p class="h4 font-weight-normal">Morpheme Representation Learning for Interlinear Glossing</p>
+  </div>
+</div>
+
+<!-- Authors -->
+<div class="row mb-2">
+  <div class="col text-center h6 font-weight-bold">
+    <span class="mx-2"><a href="https://morrisalp.github.io/">Morris Alper</a><sup>*1</sup></span>
+    <span class="mx-2"><a href="#">Enora Rice</a><sup>*2</sup></span>
+    <span class="mx-2"><a href="#">Bhargav Shandliya</a><sup>*2</sup></span>
+    <span class="mx-2"><a href="#">Alexis Palmer</a><sup>2</sup></span>
+    <span class="mx-2"><a href="#">Lori Levin</a><sup>1</sup></span>
+  </div>
+</div>
+
+<!-- Affiliations -->
+<div class="row mb-1">
+  <div class="col text-center">
+    <p class="h6 text-muted">
+      <small><sup>*</sup>Equal contribution</small> &nbsp;&middot;&nbsp;
+      <sup>1</sup>Carnegie Mellon University &nbsp;&middot;&nbsp;
+      <sup>2</sup>University of Colorado Boulder
+    </p>
+  </div>
+</div>
+
+<!-- Venue -->
+<div class="row mb-3">
+  <div class="col text-center">
+    <p class="h6 text-muted">arXiv 2026</p>
+  </div>
+</div>
+
+<!-- Links -->
+<div class="row mb-5">
+  <div class="col text-center">
+    <a href="#" class="btn btn-outline-primary mx-1" role="button">
+      <i class="ai ai-arxiv"></i> Paper
+    </a>
+    <a href="#" class="btn btn-outline-primary mx-1" role="button">
+      <i class="fa fa-github"></i> Code
+    </a>
+    <a href="#demo-section" class="btn btn-outline-primary mx-1" role="button">
+      &#127760; Explore Results
+    </a>
+  </div>
+</div>
+
+<!-- ============================================================
+     ABSTRACT
+     ============================================================ -->
+<div class="row mb-4">
+  <div class="col">
+    <p class="h4 font-weight-bold title">Abstract</p>
+    <div id="abstract-collapsed">
+      <p class="abstract" id="abstract-short">
+        Interlinear glossed text (IGT) is a standard notation for language documentation which is
+        linguistically rich but laborious to produce manually. Recent automated IGT methods treat
+        glosses as character sequences, neglecting their compositional structure&hellip;
+        <button class="btn btn-link btn-sm p-0 align-baseline" id="abstract-expand-btn">Read more</button>
+      </p>
+    </div>
+    <div id="abstract-full" style="display:none">
+      <p class="abstract">
+        Interlinear glossed text (IGT) is a standard notation for language documentation which is
+        linguistically rich but laborious to produce manually. Recent automated IGT methods treat
+        glosses as character sequences, neglecting their compositional structure. We propose
+        <strong>CWoMP</strong> (Contrastive Word-Morpheme Pretraining), which instead treats
+        morphemes as atomic form-meaning units with learned representations. A contrastively trained
+        encoder aligns words-in-context with their constituent morphemes in a shared embedding
+        space; an autoregressive decoder then generates the morpheme sequence by retrieving entries
+        from a mutable lexicon of these embeddings. Predictions are interpretable&mdash;grounded in
+        lexicon entries&mdash;and users can improve results at inference time by expanding the
+        lexicon without retraining. We evaluate on diverse low-resource languages, showing that
+        CWoMP outperforms existing methods while being significantly more efficient, with
+        particularly strong gains in extremely low-resource settings.
+      </p>
+      <p class="text-center">
+        <button class="btn btn-link btn-sm p-0" id="abstract-collapse-btn">Show less</button>
+      </p>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- ============================================================
+     METHOD
+     ============================================================ -->
+<div class="row mt-4 mb-2">
+  <div class="col">
+    <p class="h4 font-weight-bold title">Method Overview</p>
+    <p class="text-break">
+      CWoMP uses a two-stage architecture. The first component is a <strong>BoM encoder</strong>: a
+      contrastively trained dual encoder (built on a pretrained multilingual encoder) that maps
+      words-in-context and morpheme-gloss pairs into a shared embedding space. It is trained with a
+      multi-positive InfoNCE objective to recognize which morphemes are contained in a given word,
+      producing a discrete codebook of morpheme segments and their glosses.
+    </p>
+    <p class="text-break">
+      The second component is an <strong>IGT decoder</strong>: a lightweight autoregressive
+      transformer that generates the morpheme sequence for each input word by retrieving entries
+      from this codebook. At each step, the decoder's hidden state is scored against all entries in
+      a precomputed lexicon of morpheme embeddings (produced by the frozen BoM encoder), and the
+      nearest neighbor is selected. Because predictions are constrained to codebook entries, the
+      model cannot hallucinate unseen morpheme types. Crucially, users can expand this lexicon at
+      any time without retraining &mdash; immediately improving coverage.
+    </p>
+    <div class="row mt-3 align-items-center">
+      <div class="col-md-6">
+        <figure class="method-figure">
+          <img src="assets/encoder.png" class="img-fluid rounded" alt="BoM Encoder diagram" />
+          <figcaption class="text-muted small mt-1"><strong>BoM Encoder.</strong> The dual encoder learns to embed words and morphemes in a shared space via contrastive learning, minimizing distance between a word and its constituent morphemes.</figcaption>
+        </figure>
+      </div>
+      <div class="col-md-6">
+        <figure class="method-figure">
+          <img src="assets/decoder.png" class="img-fluid rounded" alt="IGT Decoder diagram" />
+          <figcaption class="text-muted small mt-1"><strong>IGT Decoder.</strong> The autoregressive decoder predicts morphemes as form-meaning units; at each step, the output embedding is matched to its nearest neighbor in the lexicon.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- ============================================================
+     INTERACTIVE DEMO
+     ============================================================ -->
+<div id="demo-section" class="row mt-4 mb-2">
+  <div class="col">
+    <p class="h4 font-weight-bold title">Interactive Glossing Browser</p>
+    <p class="text-break">
+      Explore interlinear glossing examples across six languages. Each example shows the original
+      transcript, English translation, morpheme segmentation, and per-method gloss predictions.
+      Gloss cells are color-coded:
+      <span class="morph-chip chip-correct">green&nbsp;=&nbsp;correct</span>
+      <span class="morph-chip chip-wrong">red&nbsp;=&nbsp;wrong</span>.
+    </p>
+
+    <div class="demo-card">
+      <!-- Language tabs (populated by JS) -->
+      <div id="lang-tabs" class="lang-tabs"></div>
+
+      <!-- Sentence navigator -->
+      <div class="sentence-nav">
+        <button id="btn-prev" class="nav-btn" title="Previous sentence">&#8592;</button>
+        <span id="sent-index" class="sentence-index">Sentence 1 of 1</span>
+        <button id="btn-next" class="nav-btn" title="Next sentence">&#8594;</button>
+      </div>
+
+      <!-- Sentence content + gloss table -->
+      <div id="sentence-display" class="sentence-display">
+        Loading examples&hellip;
+      </div>
+
+      <!-- Lexicon toggle -->
+      <button id="lexicon-toggle" class="lexicon-toggle-btn">
+        &#9660; Show Lexicon
+      </button>
+      <div id="lexicon-panel" class="lexicon-panel"></div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- ============================================================
+     RESULTS
+     ============================================================ -->
+<div class="row mt-4 mb-2">
+  <div class="col">
+    <p class="h4 font-weight-bold title">Results</p>
+    <p class="text-break">
+      We evaluate using Morpheme Error Rate (MER) across seven typologically diverse low-resource
+      languages. CWoMP achieves competitive or superior performance compared to GlossLM across
+      most languages, with consistent improvements in the extended-lexicon setting. Gains are
+      particularly pronounced for mid- to low-resource languages: on Lezgi, CWoMP reduces MER from
+      0.26 to 0.14&ndash;0.19, and on Gitksan&mdash;with only 31 training examples&mdash;the
+      extended lexicon setting reduces MER from 0.68 to 0.54. Performance in the extended lexicon
+      setting consistently outperforms the train lexicon setting, validating the practical workflow
+      of expanding a lexicon without retraining.
+    </p>
+    <figure class="results-figure mt-3">
+      <img src="assets/comparison.png" class="img-fluid rounded" alt="MER comparison bar chart" />
+    </figure>
+  </div>
+</div>
+
+<hr>
+
+<!-- ============================================================
+     BIBTEX
+     ============================================================ -->
+<div class="row mt-4 mb-4">
+  <div class="col">
+    <p class="h4 font-weight-bold title">Citation</p>
+    <p>If you use CWoMP in your work, please cite:</p>
+    <div class="bibtex-wrap">
+      <button class="copy-btn" id="copy-bibtex">Copy</button>
+      <pre class="bibtex-block" id="bibtex-text">@misc{alper2026cwomp,
+  title         = {{CWoMP}: Morpheme Representation Learning for Interlinear Glossing},
+  author        = {Morris Alper and Enora Rice and Bhargav Shandliya and Alexis Palmer and Lori Levin},
+  year          = {2026},
+  eprint        = {XXXX.XXXXX},
+  archivePrefix = {arXiv}
+}</pre>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<!-- <div class="row mt-3 mb-5"> -->
+  <!-- <div class="col text-center text-muted small"> -->
+    <!-- <p>
+      <strong>Acknowledgements:</strong> [Placeholder — funding sources, collaborators, data providers.]
+    </p> -->
+  <!-- </div> -->
+<!-- </div> -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="demo.js"></script>
+<script>
+  document.getElementById('abstract-expand-btn').addEventListener('click', function() {
+    document.getElementById('abstract-collapsed').style.display = 'none';
+    document.getElementById('abstract-full').style.display = 'block';
+  });
+  document.getElementById('abstract-collapse-btn').addEventListener('click', function() {
+    document.getElementById('abstract-full').style.display = 'none';
+    document.getElementById('abstract-collapsed').style.display = 'block';
+  });
+</script>
+</body>
+</html>

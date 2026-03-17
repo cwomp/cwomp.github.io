@@ -1,0 +1,124 @@
+{
+  "Tsez": [
+    {
+      "transcript": "Ražbadinez idu barun, xexbin yołƛin, žawab teƛno ečruni žek'a.",
+      "translation": "\"His wife and children live at Razhbadin's home\", answered the old man.",
+      "segmentation": "Ražbadin-z idu baru-n xexbi-n yoł-ƛin žawab teƛ-n ečru-ni žek'u-a",
+      "ground_truth": ["Razhbadin-GEN2", "home", "wife-and", "children-and", "be-QUOT", "answer", "give-PST.UNW", "old-DEF", "man-ERG"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+    },
+    {
+      "transcript": "Sidaquł žedu ciqaɣor qaciƛ'or rik'in.",
+      "translation": "One day they went into the forest to get firewood.",
+      "segmentation": "sidaquł žedu ciq-aɣor qaci-ƛ'or r-ik'i-n",
+      "ground_truth": ["one.day", "DEM1.IPL.OBL", "forest-IN.VERS", "firewood-SUPER.LAT", "II.PL-go-PST.UNW"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+    },
+    {
+      "transcript": "Di debeq ʕaq'lu mołiranix nexäsi yołƛin, eƛin užä.",
+      "translation": "\"I've come to ask you for advice\", said the boy.",
+      "segmentation": "di mi-q ʕaq'lu mołi-r-ani-x nex-asi yoł-ƛin eƛi-n uži-a",
+      "ground_truth": ["me", "you-POSS.ESS", "advice", "teach-CAUS-MSD-AD.ESS", "come-RES.PRT", "be-QUOT", "say-PST.UNW", "boy-ERG"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+    },
+    {
+      "transcript": "Micxir beč'xosi kesun bisno, Kusa iduɣor ik'in.",
+      "translation": "Having taken the coining form, he went home.",
+      "segmentation": "micxir b-eč'-x-si kesu-n b-is-n Kusa idu-ɣor ik'i-n",
+      "ground_truth": ["money", "III-cut-IPFV.CVB-ATTR", "form-TOP", "III-take-PFV.CVB", "Kusa", "home-IN.ALL", "go-PST.UNW"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+    },
+    {
+      "transcript": "Nełaq bˤuƛ'nogon k'et'u boxin ɣunoq soder bizin.",
+      "translation": "The cat got frightened, ran away and got up a tree.",
+      "segmentation": "neła-q b-ˤuƛ'-n-gon k'et'u b-oxi-n ɣun-q soder b-izi-n",
+      "ground_truth": ["DEM1.IISG.OBL-POSS.ESS", "III-be.afraid-PFV.CVB-CNTR", "cat", "III-run.away-PFV.CVB", "tree-POSS.ESS", "after", "III-get.up-PFV.CVB"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+    },
+    {
+      "transcript": "Howži yisä eloza ičanix moči k'edin.",
+      "translation": "Now he searched a place there to live.",
+      "segmentation": "howži yisi-a elo-za iči-ani-x moči k'edi-n",
+      "ground_truth": ["now", "DEM2.ISG.OBL-ERG", "there-ZA", "sit-MSD-AD.ESS", "place", "search-PST.UNW"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+    }
+  ],
+  "Gitksan": [
+    {
+      "transcript": "[Gitksan example — placeholder sentence]",
+      "translation": "[English translation placeholder]",
+      "segmentation": "[morpheme-1] [morpheme-2] [morpheme-3] [morpheme-4]",
+      "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+    }
+  ],
+  "Arapaho": [
+    {
+      "transcript": "[Arapaho example — placeholder sentence]",
+      "translation": "[English translation placeholder]",
+      "segmentation": "[morpheme-1] [morpheme-2] [morpheme-3] [morpheme-4]",
+      "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+    }
+  ],
+  "Natugu": [
+    {
+      "transcript": "[Natugu example — placeholder sentence]",
+      "translation": "[English translation placeholder]",
+      "segmentation": "[morpheme-1] [morpheme-2] [morpheme-3] [morpheme-4]",
+      "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+    }
+  ],
+  "Nyangbo": [
+    {
+      "transcript": "[Nyangbo example — placeholder sentence]",
+      "translation": "[English translation placeholder]",
+      "segmentation": "[morpheme-1] [morpheme-2] [morpheme-3] [morpheme-4]",
+      "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+    }
+  ],
+  "Lezgi": [
+    {
+      "transcript": "[Lezgi example — placeholder sentence]",
+      "translation": "[English translation placeholder]",
+      "segmentation": "[morpheme-1] [morpheme-2] [morpheme-3] [morpheme-4]",
+      "ground_truth": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_train": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "cwmp_extended": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "glosslm": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"],
+      "tucl": ["[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]", "[PLACEHOLDER]"]
+    }
+  ]
+}
