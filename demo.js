@@ -88,27 +88,36 @@
 
     const tbody = el("tbody");
 
-    // Segmentation row
-    const segRow = el("tr", "seg-row");
-    segRow.appendChild(el("td", "method-label", "Segmentation"));
-    for (let i = 0; i < gt.length; i++) {
-      const td = el("td");
-      td.style.textAlign = "center";
-      td.appendChild(el("span", "morph-chip chip-seg", segWords[i] || ""));
-      segRow.appendChild(td);
-    }
-    tbody.appendChild(segRow);
+    // Segmentation rows
+    const SEG_ROWS = [
+      { words: segWords,                        label: "GT Seg.",            isGT: true },
+      { words: (ex.cwmp_train_seg    || []),    label: "CWoMP Seg. (Train)", isGT: false },
+      { words: (ex.cwmp_extended_seg || []),    label: "CWoMP Seg. (Ext.)",  isGT: false },
+    ];
+    SEG_ROWS.forEach(({ words, label, isGT }) => {
+      const row = el("tr", "seg-row");
+      row.appendChild(el("td", "method-label", label));
+      for (let i = 0; i < gt.length; i++) {
+        const td = el("td");
+        td.style.textAlign = "center";
+        const w = words[i] || "";
+        const cls = isGT ? "chip-seg" : (w === segWords[i] ? "chip-seg" : "chip-wrong");
+        td.appendChild(el("span", `morph-chip ${cls}`, w));
+        row.appendChild(td);
+      }
+      tbody.appendChild(row);
+    });
 
     // Gloss rows: GT, CWoMP Train, CWoMP Ext., GlossLM
     const GLOSS_METHODS = [
       { key: "ground_truth",  label: "GT Gloss" },
-      { key: "cwmp_train",    label: "CWoMP (Train)" },
-      { key: "cwmp_extended", label: "CWoMP (Ext.)" },
+      { key: "cwmp_train",    label: "CWoMP Gloss (Train)" },
+      { key: "cwmp_extended", label: "CWoMP Gloss (Ext.)" },
       { key: "glosslm",       label: "GlossLM" },
     ];
 
-    GLOSS_METHODS.forEach(method => {
-      const row = el("tr");
+    GLOSS_METHODS.forEach((method, mi) => {
+      const row = el("tr", mi === 0 ? "gloss-section-start" : "");
       row.appendChild(el("td", "method-label", method.label));
 
       const glosses = ex[method.key] || [];
