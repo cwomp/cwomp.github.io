@@ -102,32 +102,31 @@
     }));
     display.appendChild(seg);
 
-    // Placeholder notice if any method has placeholder data
-    const anyPlaceholder = METHODS.some(m => m.key !== "ground_truth" && isPlaceholder(ex[m.key]));
-    if (anyPlaceholder) {
-      const notice = el("div", "placeholder-notice");
-      notice.textContent = "Model outputs for this example are placeholder data and will be replaced with real predictions.";
-      display.appendChild(notice);
-    }
-
     // Build gloss comparison table
     const gt = ex.ground_truth || [];
     const tableWrap = el("div", "gloss-table-wrap");
     const table = el("table", "gloss-table");
 
+    // Expand toggle button
+    const expandBtn = el("button", "gloss-expand-btn", "↔ Expand");
+    expandBtn.addEventListener("click", () => {
+      const expanded = tableWrap.classList.toggle("expanded");
+      expandBtn.textContent = expanded ? "↔ Collapse" : "↔ Expand";
+    });
+    tableWrap.appendChild(expandBtn);
+
     // Header
     const thead = el("thead");
     const hrow = el("tr");
     hrow.appendChild(el("th", null, "Method"));
+    const merTh = el("th", null, "MER");
+    hrow.appendChild(merTh);
     gt.forEach((_, i) => {
       const th = el("th");
       th.textContent = `M${i + 1}`;
       th.style.textAlign = "center";
       hrow.appendChild(th);
     });
-    const merTh = el("th", null, "MER");
-    merTh.style.textAlign = "right";
-    hrow.appendChild(merTh);
     thead.appendChild(hrow);
     table.appendChild(thead);
 
@@ -143,20 +142,8 @@
       const isGT = method.key === "ground_truth";
       const phRow = !isGT && isPlaceholder(glosses);
 
-      // Morpheme cells — align to GT length
-      for (let i = 0; i < gt.length; i++) {
-        const td = el("td");
-        td.style.textAlign = "center";
-        const gloss = glosses[i];
-        const cls = isGT ? "chip-gt" : chipClass(gloss, gt[i]);
-        const chip = el("span", `morph-chip ${cls}`, gloss || "");
-        td.appendChild(chip);
-        row.appendChild(td);
-      }
-
-      // MER
+      // MER (second column)
       const merTd = el("td", "mer-cell");
-      merTd.style.textAlign = "right";
       if (isGT) {
         merTd.innerHTML = `<span class="mer-dash">—</span>`;
       } else if (phRow) {
@@ -167,6 +154,17 @@
         merTd.textContent = `${pct}%`;
       }
       row.appendChild(merTd);
+
+      // Morpheme cells — align to GT length
+      for (let i = 0; i < gt.length; i++) {
+        const td = el("td");
+        td.style.textAlign = "center";
+        const gloss = glosses[i];
+        const cls = isGT ? "chip-gt" : chipClass(gloss, gt[i]);
+        const chip = el("span", `morph-chip ${cls}`, gloss || "");
+        td.appendChild(chip);
+        row.appendChild(td);
+      }
 
       tbody.appendChild(row);
     });
