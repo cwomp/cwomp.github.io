@@ -12,42 +12,7 @@
   let currentIdx = 0;
   let lexOpen = false;
 
-  const METHODS = [
-    { key: "ground_truth", label: "Ground Truth" },
-    { key: "cwmp_train",    label: "CWoMP (Train Lex)" },
-    { key: "cwmp_extended", label: "CWoMP (Ext. Lex)" },
-    { key: "glosslm",       label: "GlossLM" },
-  ];
-
-  /* ---- MER (Morpheme Error Rate) ---- */
-  function mer(pred, gold) {
-    if (gold.length === 0) return 0;
-    const dp = [];
-    for (let i = 0; i <= pred.length; i++) {
-      dp[i] = [];
-      for (let j = 0; j <= gold.length; j++) {
-        if (i === 0) dp[i][j] = j;
-        else if (j === 0) dp[i][j] = i;
-        else dp[i][j] = 0;
-      }
-    }
-    for (let i = 1; i <= pred.length; i++) {
-      for (let j = 1; j <= gold.length; j++) {
-        dp[i][j] = Math.min(
-          dp[i - 1][j] + 1,
-          dp[i][j - 1] + 1,
-          dp[i - 1][j - 1] + (pred[i - 1] === gold[j - 1] ? 0 : 1)
-        );
-      }
-    }
-    return Math.min(dp[pred.length][gold.length] / gold.length, 1.0);
-  }
-
   /* ---- Helpers ---- */
-  function isPlaceholder(arr) {
-    return arr && arr.some(v => typeof v === "string" && v.includes("[PLACEHOLDER]"));
-  }
-
   function chipClass(gloss, gt) {
     if (!gloss) return "chip-placeholder";
     if (gloss.includes("[PLACEHOLDER]")) return "chip-placeholder";
@@ -94,16 +59,9 @@
     tr.appendChild(Object.assign(el("div", "field-text translation"), { textContent: ex.translation }));
     display.appendChild(tr);
 
-    // Segmentation
-    const seg = el("div", "sentence-field");
-    seg.appendChild(el("div", "field-label", "Morpheme segmentation"));
-    seg.appendChild(Object.assign(el("div", ""), {
-      innerHTML: `<span class="field-text segmentation">${escHtml(ex.segmentation)}</span>`
-    }));
-    display.appendChild(seg);
-
-    // Build gloss comparison table
+    // Build interlinear gloss table
     const gt = ex.ground_truth || [];
+    const segWords = (ex.segmentation || "").split(" ");
     const tableWrap = el("div", "gloss-table-wrap");
     const table = el("table", "gloss-table");
 
@@ -115,15 +73,13 @@
     });
     tableWrap.appendChild(expandBtn);
 
-    // Header
+    // Header: blank + W1 W2 ...
     const thead = el("thead");
     const hrow = el("tr");
-    hrow.appendChild(el("th", null, "Method"));
-    const merTh = el("th", null, "MER");
-    hrow.appendChild(merTh);
+    hrow.appendChild(el("th", null, ""));
     gt.forEach((_, i) => {
       const th = el("th");
-      th.textContent = `M${i + 1}`;
+      th.textContent = `W${i + 1}`;
       th.style.textAlign = "center";
       hrow.appendChild(th);
     });
@@ -132,37 +88,38 @@
 
     const tbody = el("tbody");
 
-    METHODS.forEach(method => {
+    // Segmentation row
+    const segRow = el("tr", "seg-row");
+    segRow.appendChild(el("td", "method-label", "Segmentation"));
+    for (let i = 0; i < gt.length; i++) {
+      const td = el("td");
+      td.style.textAlign = "center";
+      td.appendChild(el("span", "morph-chip chip-seg", segWords[i] || ""));
+      segRow.appendChild(td);
+    }
+    tbody.appendChild(segRow);
+
+    // Gloss rows: GT, CWoMP Train, CWoMP Ext., GlossLM
+    const GLOSS_METHODS = [
+      { key: "ground_truth",  label: "GT Gloss" },
+      { key: "cwmp_train",    label: "CWoMP (Train)" },
+      { key: "cwmp_extended", label: "CWoMP (Ext.)" },
+      { key: "glosslm",       label: "GlossLM" },
+    ];
+
+    GLOSS_METHODS.forEach(method => {
       const row = el("tr");
-      // Method label
-      const labelTd = el("td", "method-label", method.label);
-      row.appendChild(labelTd);
+      row.appendChild(el("td", "method-label", method.label));
 
       const glosses = ex[method.key] || [];
       const isGT = method.key === "ground_truth";
-      const phRow = !isGT && isPlaceholder(glosses);
 
-      // MER (second column)
-      const merTd = el("td", "mer-cell");
-      if (isGT) {
-        merTd.innerHTML = `<span class="mer-dash">—</span>`;
-      } else if (phRow) {
-        merTd.innerHTML = `<span class="mer-dash">—</span>`;
-      } else {
-        const score = mer(glosses, gt);
-        const pct = (score * 100).toFixed(1);
-        merTd.textContent = `${pct}%`;
-      }
-      row.appendChild(merTd);
-
-      // Morpheme cells — align to GT length
       for (let i = 0; i < gt.length; i++) {
         const td = el("td");
         td.style.textAlign = "center";
         const gloss = glosses[i];
         const cls = isGT ? "chip-gt" : chipClass(gloss, gt[i]);
-        const chip = el("span", `morph-chip ${cls}`, gloss || "");
-        td.appendChild(chip);
+        td.appendChild(el("span", `morph-chip ${cls}`, gloss || ""));
         row.appendChild(td);
       }
 

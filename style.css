@@ -234,22 +234,11 @@
   white-space: nowrap;
 }
 
+.chip-seg      { background: #f8f9fa; color: #495057; border: 1px solid #dee2e6; }
 .chip-gt       { background: #e9ecef; color: #212529; border: 1px solid #ced4da; }
-.chip-correct  { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+.chip-correct  { background: #e9ecef; color: #212529; border: 1px solid #ced4da; }
 .chip-wrong    { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
 .chip-placeholder { background: #f8f9fa; color: #adb5bd; border: 1px solid #dee2e6; font-style: italic; }
-
-/* MER column */
-.mer-cell {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: #495057;
-  white-space: nowrap;
-  text-align: left;
-}
-
-.mer-dash { color: #adb5bd; }
 
 /* Placeholder notice */
 .placeholder-notice {
