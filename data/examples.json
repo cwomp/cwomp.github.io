@@ -1381,9 +1381,9 @@
       ]
     },
     {
-      "transcript": "Kx xlrbz trtenge nzycmnekrbz Tzsiu Jon , sc tqrpipebzle kx , \" Awitxpe Jon , mz nzycmne-krm la .",
+      "transcript": "Kx xlrbz trtenge nzycmnekrbz Tzsiu Jon , sc tqrpipebzle kx , “ Awitxpe Jon , mz nzycmne-krm la .",
       "translation": "When my father heard the speech of Brother John, he said to him, \"Thank you very much John, for that speech of yours.",
-      "segmentation": "kx xlr-bz trte-nge nz-ycmne-kr-bz tzsiu Jon , sc tq-r-pi-pe-bz-le kx , \" awi-tx-pe Jon , mz nz-ycmne-kr-mq la .",
+      "segmentation": "kx xlr-bz trte-nge nz-ycmne-kr-bz tzsiu Jon , sc tq-r-pi-pe-bz-le kx , “ awi-tx-pe Jon , mz nz-ycmne-kr-mq la .",
       "cwmp_train_seg": [
         "kx",
         "xlr-bz",
