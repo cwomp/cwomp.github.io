@@ -1,9 +1,9 @@
 {
   "Tsez": [
     {
-      "transcript": "Raq'ˤu ɣˤutkubin rodin, žedałxortow kinaw idu yałru maʕišatno bik'in łiyn.",
+      "transcript": "Raq’ˤu ɣˤutkubin rodin, žedałxortow kinaw idu yałru maʕišatno bik’in łiyn.",
       "translation": "He built many houses and the entire fortune that was in his home went away through them.",
-      "segmentation": "r-aq'ˤu ɣˤutku-bi-n r-odi-n žeda-łxor-tow kinaw idu yoł-ru maʕišat-n b-ik'i-n łiy-n",
+      "segmentation": "r-aq’ˤu ɣˤutku-bi-n r-odi-n žeda-łxor-tow kinaw idu yoł-ru maʕišat-n b-ik’i-n łiy-n",
       "cwmp_train_seg": [
         "r-aq’ˤu",
         "ɣˤutku-bi-n",
@@ -78,9 +78,9 @@
       ]
     },
     {
-      "transcript": "Žeda ža sidaɣ łˤebozał ƛ'iriɣor hut'-mˤalin roƛik'no uqˤno.",
+      "transcript": "Žeda ža sidaɣ łˤebozał ƛ’iriɣor hut’-mˤalin roƛik’no uqˤno.",
       "translation": "They hid him somewhere with only his face out of the leaves.",
-      "segmentation": "žedu-a ža sidaɣ ƛˤeb-bi-ł ƛ'iri-ɣor hut'~mˤali-n r-oƛik'-n uqˤi-n",
+      "segmentation": "žedu-a ža sidaɣ ƛˤeb-bi-ł ƛ’iri-ɣor hut’~mˤali-n r-oƛik’-n uqˤi-n",
       "cwmp_train_seg": [
         "žedu-a",
         "ža",
@@ -143,9 +143,9 @@
       ]
     },
     {
-      "transcript": "Sida q'orolays mamalay zown ɣudes šudaƛ'orno bik'in akbar roɣxo bičixosi.",
+      "transcript": "Sida q’orolays mamalay zown ɣudes šudaƛ’orno bik’in akbar roɣxo bičixosi.",
       "translation": "A widow had a rooster, who went to the graveyard every day to crow.",
-      "segmentation": "sida q'orolay-s mamalay zow-n ɣudes šuda-ƛ'or-n b-ik'i-n akbar r-oɣ-x b-iči-xosi",
+      "segmentation": "sida q’orolay-s mamalay zow-n ɣudes šuda-ƛ’or-n b-ik’i-n akbar r-oɣ-x b-iči-xosi",
       "cwmp_train_seg": [
         "sida",
         "q’orolay-s",
@@ -220,9 +220,9 @@
       ]
     },
     {
-      "transcript": "Riyxƛin, eƛin kidbä, ža yoł insanes rok'u.",
+      "transcript": "Riyxƛin, eƛin kidbä, ža yoł insanes rok’u.",
       "translation": "\"I know it,\" said his daughter, \"it is the human heart.\"",
-      "segmentation": "r-iy-x-ƛin eƛi-n kid-a ža yoł insan-s rok'u",
+      "segmentation": "r-iy-x-ƛin eƛi-n kid-a ža yoł insan-s rok’u",
       "cwmp_train_seg": [
         "r-iy-x-ƛin",
         "eƛi-n",
@@ -279,9 +279,9 @@
       ]
     },
     {
-      "transcript": "Xanä neła aɣeł xizay baq'ˤu nukarbi begirno, hudun didurnokin žeduq ža biqin anu.",
+      "transcript": "Xanä neła aɣeł xizay baq’ˤu nukarbi begirno, hudun didurnokin žeduq ža biqin anu.",
       "translation": "The king sent many henchman after that bird they didn't get the bird in any way.",
-      "segmentation": "xan-a neła aɣi-ł xizay b-aq'ˤu nukar-bi b-egir-n hudun didur-n-kin žedu-q ža b-iqi-n anu",
+      "segmentation": "xan-a neła aɣi-ł xizay b-aq’ˤu nukar-bi b-egir-n hudun didur-n-kin žedu-q ža b-iqi-n anu",
       "cwmp_train_seg": [
         "xan-a",
         "neła",
@@ -374,9 +374,9 @@
       ]
     },
     {
-      "transcript": "Sis ħon xecix, q'ano xecix, łˤono äƛiru xecinosi sida sasiw ciqor nišiw huni yałza mečoƛ'or ayn.",
+      "transcript": "Sis ħon xecix, q’ano xecix, łˤono äƛiru xecinosi sida sasiw ciqor nišiw huni yałza mečoƛ’or ayn.",
       "translation": "Passing one mountain, passing two, and when he was passing the third one, he came to a place where there was a narrow way into a gloomy forest.",
-      "segmentation": "sis ħon xeci-x q'ˤano xeci-x łˤono eƛi-ru xeci-nosi sida sasiw ciq-qor nišiw huni yoł-za moči-ƛ'or ay-n",
+      "segmentation": "sis ħon xeci-x q’ˤano xeci-x łˤono eƛi-ru xeci-nosi sida sasiw ciq-qor nišiw huni yoł-za moči-ƛ’or ay-n",
       "cwmp_train_seg": [
         "sis",
         "ħon",
