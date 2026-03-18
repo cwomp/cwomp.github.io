@@ -20,6 +20,27 @@
     return "chip-wrong";
   }
 
+  const PUNC_RE = /^[^\p{L}\p{N}]+$/u;
+
+  /**
+   * Align a prediction array (which may lack punctuation) to GT slots.
+   * GT punctuation slots are filled with null (rendered as placeholder).
+   * Returns an array of length gt.length.
+   */
+  function alignToGT(preds, gt) {
+    const aligned = [];
+    let pi = 0;
+    for (let i = 0; i < gt.length; i++) {
+      if (PUNC_RE.test(gt[i])) {
+        aligned.push(null); // punctuation: no prediction expected
+      } else {
+        aligned.push(preds[pi] !== undefined ? preds[pi] : null);
+        pi++;
+      }
+    }
+    return aligned;
+  }
+
   function el(tag, cls, text) {
     const e = document.createElement(tag);
     if (cls) e.className = cls;
@@ -120,8 +141,12 @@
       const row = el("tr", mi === 0 ? "gloss-section-start" : "");
       row.appendChild(el("td", "method-label", method.label));
 
-      const glosses = ex[method.key] || [];
+      const rawGlosses = ex[method.key] || [];
       const isGT = method.key === "ground_truth";
+      // GlossLM doesn't predict punctuation — align its predictions to GT slots
+      const glosses = (method.key === "glosslm")
+        ? alignToGT(rawGlosses, gt)
+        : rawGlosses;
 
       for (let i = 0; i < gt.length; i++) {
         const td = el("td");
